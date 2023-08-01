@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: rgb(194, 237, 128);
+
+        }
+        p{
+            background-color: red;
+            width: 90px;
+            height: 20px;
+        
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: Loading1;
+            animation-duration:6s;
+            animation-iteration-count: 2;
+            animation-fill-mode:forwards; /* End m result apply rhe ya nhi */
+            animation-timing-function: ease-in-out;
+            animation-direction:normal;
+            animation-delay: 3s;
+        }
+    
+        @keyframes Loading1 {
+            from{
+           width: 90px;
+            }
+            to{
+              width: 100%;
+            }
+        }
+        .box{
+            display: flex;
+            height: 80px;
+            width: 80px;
+            background-color: palegreen;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: BoxMove 3s ease-in 2s 5 normal forwards;
+
+        }
+        @keyframes BoxMove {
+            0%{
+position: relative;
+top: 250px;
+left: 0px;
+background-color: palegreen;
+
+            }
+            25%{
+                position: relative;
+left: 250px;
+top:250px;
+background-color: rgb(251, 152, 152);
+
+}
+75%{
+    position: relative;
+left: 250px;
+top:0px;
+background-color: rgb(152, 251, 243);
+
+}
+100%{
+    position: relative;
+left: 0px;
+top:0px;
+background-color: rgb(224, 32, 32);
+
+
+}
+        }
+        
+    </style>
+</head>
+<body>
+    Welcome to Our Website. Your File is loading...
+    <!-- Animation -->
+    <div class="container">
+    <p>Please wait...</p>
+</div>
+<div class="box">
+    Box1
+</div>
+</body>
+</html>

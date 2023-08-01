@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        background-color: #b0fffe;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid gray;
+        width: 700px;
+        margin: 20px auto;
+      }
+      .items {
+        /* width:240px;
+    height: 200px; */
+        border: 1px solid gray;
+        margin: 12px 8px;
+        border-radius: 5px;
+        padding: 6px 5px;
+        background-color: rgb(243, 198, 143);
+      }
+      #smartphone {
+        float: left;
+        width: 48%;
+      }
+      #smartwatch {
+        float: right;
+        width: 47%;
+      }
+      #neckband {
+        /* float: left; */
+        clear: left;
+        /* clear:right; */
+
+        width: 98%;
+      }
+      p,
+      h2 {
+        text-align: left;
+        text-align: justify;
+        /* text-transform: lowercase; */
+        /* text-shadow: 1px 1px gray ; */
+      }
+      h1 {
+        /* margin:auto;
+    width: 250px; */
+        text-align: center;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Gadgets</h1>
+      <div id="smartphone" class="items">
+        <h2>Smart Phones</h2>
+        <p id="phoneInfo" class="itemsInfo">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          culpa fugiat reiciendis fugit assumenda dolores saepe tempora magnam,
+          expedita corporis?Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Saepe illo, quas, dolores modi numquam corrupti recusandae hic
+          ipsum, aperiam laborum eius unde repellat. Id ipsum earum praesentium
+          temporibus sed iusto blanditiis qui quae voluptatum.
+        </p>
+      </div>
+      <div id="smartwatch" class="items">
+        <h2>Smart Watches</h2>
+        <p id="watchInfo" class="itemsInfo">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          culpa fugiat reiciendis fugit assumenda dolores saepe tempora magnam,
+          expedita corporis? Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Rerum eveniet rem sit consectetur beatae ipsum dolore aperiam
+          quam fugiat odit enim aut ratione, at consequuntur obcaecati vel!
+          Ullam sunt minus neque eos, aliquam fugit.
+        </p>
+      </div>
+      <div id="neckband" class="items">
+        <h2>Neckband</h2>
+        <p id="neckbandInfo" class="itemsInfo">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          culpa fugiat reiciendis fugit assumenda dolores saepe tempora magnam,
+          expedita corporis?
+        </p>
+      </div>
+      <div id="Bluetooth" class="items">
+        <h2>Bluetooth</h2>
+        <p id="bluetoothInfo" class="itemsInfo">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          culpa fugiat reiciendis fugit assumenda dolores saepe tempora magnam,
+          expedita corporis?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

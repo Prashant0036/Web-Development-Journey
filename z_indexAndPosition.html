@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index and Position</title>
+</head>
+<style>
+/* || for using z-index property, position of participating element should not be static. || */
+
+
+
+    .box1{
+
+        /*  */
+        position: absolute;
+        z-index: 1;
+      /*  */
+/* visibility: hidden;
+display: none; */
+
+        color:red;
+    width:300px;
+    height: 100px;
+    background-color: rgb(106, 197, 31);
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: right;
+
+
+    }
+    .box2{
+        /*  */
+        position: absolute;
+        top: 50px;
+        z-index: 2;
+/*  */
+        color:rgb(232, 232, 232);
+    width:250px;
+    height: 100px;
+    background-color: rgb(197, 31, 194);
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: right;
+
+
+
+    }
+    .box3{
+        position: absolute;
+        z-index:3 ;
+        color:red;
+    width:200px;
+    height: 100px;
+    background-color: rgb(31, 180, 197);
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+
+
+    }
+</style>
+<body>
+    <div class="box1">This is Box 1</div>
+    <div class="box2">This is Box 2</div>
+
+    <div class="box3">This is Box 3</div>
+
+</html>

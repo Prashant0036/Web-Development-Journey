@@ -1,0 +1,68 @@
+/* type selector
+h3{
+
+    color: green;
+}
+/* class selector */
+.H2{
+    background-color: aqua;
+}
+
+/* id selector */
+#para{
+    color: blueviolet;
+}
+
+/* attribute selector */
+a[href="https://wwww.google.com"]{
+    color:yellow;
+    background-color: green;
+}
+/* pseudo class */
+h1:hover{
+background-color: aquamarine;
+
+}
+
+a[href="https://www.google.com"]:visited{
+    color:yellow;
+    background-color:red;
+}
+/* pseudo element selector */
+p::first-line{
+
+    color: red;
+}
+
+/* Combinator selector */
+section>h4{
+
+    color:navy
+}
+
+
+/* universal selctor */
+
+*{
+background-color: gray;
+} 
+
+section.H3{
+
+    color: palevioletred;
+}
+section#HH3{
+
+    color: rgb(209, 6, 74);
+}
+body{
+    background-color: azure;
+}
+#section1{
+
+    background-color: skyblue;
+}
+section{
+    
+    background-color: aqua;
+}

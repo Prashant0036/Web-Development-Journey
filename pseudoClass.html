@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class | Styling Links and buttons</title>
+</head>
+<style>
+.container{
+    border:2px solid gray;
+    margin : auto;
+    width:500px;
+    padding:10px;
+    text-align:justify ;
+   background-color: aquamarine;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+a{
+text-decoration: none;
+
+}
+.btn{
+
+    background-color: rgb(255, 74, 74);
+    color: white;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 3px;
+    font-family:monospace;
+    font-weight: bold;
+}
+.btn:visited{
+
+background-color: rgb(74, 158, 255);
+color: white;
+border: none;
+font-size: large;
+cursor: pointer;
+border-radius: 2px;
+padding: 3px;
+font-family:monospace;
+}
+.btn:hover{
+
+background-color: rgb(254, 254, 254);
+color: rgb(32, 32, 32);
+border: none;
+font-size: large;
+cursor: pointer;
+border-radius: 2px;
+padding: 3px;
+font-family:monospace;
+}
+.btn:active{
+
+background-color: rgb(104, 255, 74);
+color: white;
+border: none;
+font-size: large;
+cursor: pointer;
+border-radius: 2px;
+padding: 3px;
+font-family:monospace;
+}
+
+</style>
+<body>
+    <div class="container" id="cont" >
+
+        <h1>This is Prashant Saraswat</h1>
+        <p>This is my info Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fugit eligendi maxime in nam sit harum nemo quam veniam quae.</p>
+        <a href="05_form.html" class="btn" target="_blank">Fill Form</a>
+        <button class="btn">Fill Form</button>
+    </div>
+</body>
+</html>

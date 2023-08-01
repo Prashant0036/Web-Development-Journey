@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+
+            border:2px dashed gray;
+            height: 400px;
+
+            /* initializing the flex box; */
+            display: flex; 
+
+            /* Flex container Properties. */
+/* 1- Flex Direction */
+flex-direction: row; /*(Default)*/
+/* flex-direction: column;
+flex-direction: row-reverse;
+flex-direction: column-reverse; */
+
+
+/* 2- flex-wrap */
+flex-wrap: nowrap; /* Default */
+/* flex-wrap: wrap-reverse; */
+flex-wrap: wrap;
+/* Note: flex-flow: is shorthand to declare flex-drection and flex-wrap both concurrently; */
+
+
+/* 3- Justify content */
+/* Justify items will justify the content in horizontal direction: ; */
+justify-content: center;
+justify-content: baseline;
+justify-content:end;
+justify-content: left;
+justify-content: space-around;
+justify-content: space-between;
+justify-content: space-evenly;
+justify-content:center;
+
+/* 4- align-items */
+/* Justify items will justify the content in vertical direction: ; */
+
+align-items: center;
+align-items: baseline;
+align-items:last baseline;
+
+justify-content: center;
+align-items: flex-start;
+
+        }
+
+
+        .items{
+            /* Flex items Properties. */
+
+            height:50px;
+            width: 50px; 
+            background-color: coral;
+            border: 1px solid black;
+            margin: 3px;
+            padding: 3px;
+        }
+        #item1{
+            /* Flex items Properties. */
+/* 1- order  */
+order:2;
+
+/* 2- flex-grow */
+/* flex-grow: 2;
+
+3- flex-shrink
+flex-shrink: 3; */
+        }
+        #item2{
+order: 1;
+/* flex-grow: 3; 
+flex-shrink: 2; less shrink */
+
+        }
+#item3{
+flex-basis: 230px;
+/* it is width when flex-direction: is row and it will work as a height when flex-direction: is column;; */
+
+
+align-self: flex-end;
+align-self: center; 
+/* will perform vertically */
+
+
+}
+    </style>
+</head>
+<body>
+    <h1>Flexbox in CSS</h1>
+    <!-- flex container -->
+    <div class="container"> 
+         
+        <!-- Flex items -->
+        <div class="items" id="item1">First Box</div>
+        <div class="items" id="item2">Second Box</div>
+        <div class="items" id="item3">Third Box</div>
+        <div class="items" id="item4">Fourth Box</div>
+        <div class="items" id="item5">Fifth Box</div>
+        <div class="items" id="item6">Sixth Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#text{
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding: 40px;
+border: 3px solid salmon;
+margin: 30px;
+
+
+}
+div{
+
+    font-size: 15px;
+}
+
+
+/* padding vs margin */
+.wrapper{
+
+    background-color: aquamarine;
+}
+.box1,.box2{
+
+height: 100px;
+width: 100px;
+
+
+
+}
+.box1{
+
+    background-color: aqua;
+    margin :20px;
+}
+.box2{
+
+    background-color: tomato;
+    padding:5px;
+}

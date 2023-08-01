@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <style>
+        .box {
+            background: red;
+            border: 1px solid black;
+            margin: 10px;
+        }
+  
+        .parent {
+            background: white;
+            border: 1px solid black;
+        }
+  
+        .fifty-percent {
+            width: 50%;
+            width: 50em;
+            width: 30vh;
+            /* relative units */
+        }
+  
+        .one-hundred {
+            width: 100px;
+            /* absolute units */
+
+        }
+  
+        .parent {
+            width: 250px;
+            ;
+        }
+    </style>
+    <link rel="stylesheet" href="CSS_5_BoxModel.css">
+</head>
+  
+<body>
+    <h3>Output-1 </h3>
+    
+    
+    <div class="box fifty-percent">50%</div>
+
+
+    
+    <div class="box one-hundred">100px</div>
+
+    <hr>
+    <h3>Output-2 </h3>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box one-hundred">100px</div>
+        
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div id="text">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam voluptates suscipit, accusantium error numquam voluptatibus est voluptate officiis nisi, repellat, quo saepe pariatur! Et laudantium molestias beatae hic laborum ut quisquam culpa eos quod, cum fuga nemo quasi incidunt, earum officia dolores animi fugiat. Maiores error sed eius, quasi soluta quis in nesciunt animi asperiores, esse voluptatum quod. Assumenda necessitatibus soluta commodi deleniti exercitationem ipsam odit, architecto reprehenderit quaerat iure maiores. Reiciendis provident error dolores, soluta aut architecto ad inventore aspernatur ratione vel! Esse, pariatur est, suscipit quasi voluptates sint sapiente qui, soluta reprehenderit repudiandae iste quod aliquid ea?
+</div>
+
+<!-- padding vs margin -->
+
+<div class="wrapper">
+
+    <p class="box1">Box1</p>
+    <p class="box2">Box2</p>
+
+</div>
+</body>
+  
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      .navbar {
+        border: 2px solid gray;
+        background-color: black;
+        border-radius: 5px;
+        height: 50px;
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        list-style: none;
+        float: left;
+        padding-left: 40px;
+      }
+      .navbar a {
+        text-decoration: none;
+
+        color: white;
+      }
+      .navbar a:hover {
+        text-decoration: none;
+        color: rgb(243, 2, 2);
+      }
+      .navbar input {
+        border-radius: 5px;
+        border: 2px solid gray;
+        margin-right: 35px;
+        /* width: 200px; */
+        padding: 1px 24px;
+      }
+      .search {
+        float: right;
+        padding: 0px 28px;
+
+        /* margin-left: 550px;  */
+      }
+
+      /* container */
+      .container {
+        border: 2px solid gray;
+        
+        width: 450px;
+        margin: 10px auto;
+      }
+      img {
+        width: 130px;
+        height: 100px;
+        /* border: 2px solid red; */
+        display: block;
+        margin: auto;
+        /* margin:auto works with block element (not with inline element ) and who has it's width */
+      }
+      h2 {
+        /* border: 2px solid red; */
+        width: 250px;
+        margin: auto;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      .box{
+
+        border:2px solid gray;
+        margin: 21px 21px;
+        width: 300px;
+        
+
+        /* |||Using Float ||| */
+        /* float: left;
+        padding: 13px 20px;
+        background-color: rgb(194, 204, 255); */
+
+        /* |||Using inline-block ||| */
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 13px 20px;
+        background-color: rgb(194, 204, 255);
+        
+      }
+      .container1{
+
+        margin:auto;
+        /* border: 2px solid gold; */
+        width: fit-content;
+      }
+      /* #box1{
+        margin-left: 100px;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <div class="search">
+            <li>
+              <input
+                type="text"
+                name="search"
+                id="srch"
+                placeholder=" Search Here "
+              />
+            </li>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <img src="img/E_Booklogos.png" />
+      <h2>This is Ebooks4U logo.</h2>
+    </div>
+<div class="container1">
+    <div class="box" id="box1">
+
+       <h3>This is heading 1</h3>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, excepturi dolorem. Odit consequatur debitis consequuntur ducimus adipisci, eos quas eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, vero.
+
+       </p>
+    </div>
+    <div class="box">
+
+        <h3>This is heading 1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, excepturi dolorem. Odit consequatur debitis consequuntur ducimus adipisci, eos quas eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, vero.
+ 
+        </p>
+     </div>
+     <div class="box">
+
+        <h3>This is heading 1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, excepturi dolorem. Odit consequatur debitis consequuntur ducimus adipisci, eos quas eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, vero.
+ 
+        </p>
+     </div>
+    </div>
+  </body>
+</html>

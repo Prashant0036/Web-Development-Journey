@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form_css.css">
+</head>
+<body>
+    
+    <img id="img1" class="topImg" src="img/online-payments_mode-banner.jpg"  >
+    <h1>Payment Form</h1>
+      
+    <form method="get" action="index.php">
+        <h2>Contact Details</h2>
+        <p>Name : *
+      <input class="dtls"type="text" name="Name" required>
+      </p>
+      <p> <fieldset> 
+        <legend> Gender :</legend>
+        <input type="radio" name="Gender"> Male
+        <input type="radio" name="Gender"> Female
+    </fieldset>
+      </p>
+      <p>
+Email :* <input class="dtls" type="email" name="Email">       
+      </p>
+<p> Address: <textarea name="Address" cols="50" rows="4"></textarea></p>
+<hr>
+<h2>Payment Information </h2>
+<p>Card Type : <select required>
+
+    <option value="">--Select A Card Type--</option>
+    <option value="Rupay">Rupay</option>
+    <option value="Visa">Visa</option>
+    <option value="Master Card">Master Card</option>
+    
+</select></p>
+
+<p> Card Number :
+    <input type="number" name="Card Number">
+</p>
+<p>
+    Expiry Date :
+    <input type="date" name="ExpDate">
+</p>
+<p>
+   CVV : 
+   <input type="password" name="CVV"> 
+</p>
+<input class="btn" type="submit" value="Pay Now">
+<input class="btn" id="rst" type="reset" value="Reset">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      /* position in CSS - static(Default), absolute, relative, fixed, sticky */
+      .container {
+        border: 2px solid greenyellow;
+         height: 5000px; /*for demonstration of fixed position */
+      }
+      .box {
+        border: 3px solid tomato;
+        width: 100px;
+        height: 50px;
+        margin: 5px;
+        padding: 25px 5px 0px 10px;
+        /* float: left; */
+
+        display: inline-block;
+      }
+      #box3 {
+        /* |1-| relative: relative to it's normal position and will create a vaccum*/
+        /* position:relative ; */
+        /* top: 40px;
+            left: 34px; */
+
+        /* |2-| absolute: relative to it's first parent */
+        /* position:absolute;
+            top: 40px;
+            left: 34px; */
+        /* bottom: 30px; */
+
+        /* |3-| fixed: position: will be fixed according to browser window. element will not change it's position even after scrolling*/
+        /* position: fixed;
+        bottom: 10px;
+        right: 10px; */
+
+        /* |4-| sticky : stick with screen */
+        position: sticky;
+        top:5px; 
+       
+          }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">This is Box1</div>
+      <div class="box" id="box2">This is Box2</div>
+      <div class="box" id="box3">This is Box3</div>
+      <div class="box" id="box4">This is Box4</div>
+    </div>
+  </body>
+</html>

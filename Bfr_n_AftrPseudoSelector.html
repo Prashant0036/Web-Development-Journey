@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+        }
+        body{
+             background-size: cover;
+           /* background-repeat:no-repeat ; */
+            
+        }
+        header::before{
+            
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+        }
+header ul {
+    background: #000000;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 4px;
+    
+}
+header ul li{
+    list-style: none;
+    padding: 8px;
+    margin:5px 11px 5px 25px;
+    cursor: pointer;
+
+}
+header ul li:hover{
+    list-style: none;
+    padding: 8px;
+    margin:5px 11px 5px 25px;
+    cursor: pointer;
+    color: gray;
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+align-items: center;    
+margin-top: 2em;
+flex-wrap: wrap;
+/* justify-content: center; for vertical center */
+}
+h2,p{
+color: green;
+background-color: white;
+margin: 5px;
+padding: 5px;
+
+}
+h2{
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="items">Home</li>
+                <li class="items">About Us</li>
+                <li class="items">Services</li>
+                <li class="items">Contact Us</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+<h2>Welcome to E-books4U</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit sint expedita nisi rerum corporis ducimus commodi modi ipsum. Quia modi ipsum facere explicabo aliquam praesentium sunt quod corporis tempore placeat ullam nam aut commodi animi nobis impedit, consequuntur tempora, omnis ab repellat accusamus, magnam mollitia officia quidem. Rem, sapiente!</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* color */
+
+h1{
+    color: rgb(204, 67, 58); 
+    /* using color name */
+}
+h2{
+    color: rgba(2, 5, 0, 0.658)   
+     /* using rgb and opacity(0-1) */
+}
+h3{
+    color: #343434; 
+    /* using Hex value #RRGGBB*/
+}
+
+
+/* Background Color  */
+
+
+h1{
+    background-color: aqua; 
+    /* using color name */
+}
+h2{
+    background-color: rgba(32, 91, 142, 0.441)   
+     /* using rgb and opacity(0-1) */
+}
+h3{
+    background-color: #d76a6a90; 
+    /* using Hex value #RRGGBB*/
+}
+
+
+/* Background image */
+
+/* h1{
+
+    background-image: url("img/pic.jpg");
+    background-repeat: no-repeat;
+} */
+.DIV{
+    background-image: url("img/hanuman\ chalisa.jpeg");
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 600px;
+    height: 700px;
+    background-size: 500px;
+    /* background-size: auto; */
+    background-attachment: scroll;
+    border: 2px solid black;
+}
+
+.DIV2{
+    background-image: url("img/-school-bag-with-books-and-equipment.webp");
+    background-repeat: no-repeat;
+    background-position:bottom right;
+    width: 600px;
+    background-size:300px;
+    background-attachment:fixed;
+
+
+}
+    /* background position */
+
+

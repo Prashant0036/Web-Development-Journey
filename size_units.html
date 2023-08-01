@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size-Units</title>
+    <style>
+        html{
+
+            font-size: 12px;
+        }
+        .container{
+            font-size: 10px;
+
+            /* viewport width and viewport height */
+            border: 2px solid salmon;
+            width: 100vw;
+            height: 50vh;
+        }
+
+#H1{
+font-size: 3em ; 
+/* 3X of parent which is 10px  */
+
+padding: 2em;
+/* 2X of font size which is now 30px  */
+
+font-size: 2rem;
+/* 2X of root which is 12px */
+}
+#H2{
+    font-size: 2rem;
+/* 2X of root which is 12px */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <h1 id="H3">This is heading 1</h1>
+        <h1 id="H1">This is heading 2</h1>
+        <h1 id="H2">This is heading 3</h1>
+    </div>
+    
+</body>
+</html>
